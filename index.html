@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAY MUSIC</title>
+    <link rel="shortcut icon" href="logo2.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="laptop">
+        <center>
+            <h1>Open this website in your phone. we are not ready for laptop.</h1>
+        </center>
+    </div>
+    <div class="hidden">
+        <div class="main">
+            <nav>
+                <ul>
+                    <li><img id="logo" src="logo2.jpeg" alt=""></li>
+                    <li><img id="noti" src="notification.png" alt=""></li>
+                </ul>
+
+            </nav>
+            <nav class="head">
+                <p id="p1">Listen The <br> Letest Musics</p>
+                <!-- <img id="search" src="search.png" alt=""> -->
+                <input type="search" placeholder="search musics">
+            </nav>
+            <div class="cantainar">
+                <p id="p2">Recommend for you</p>
+                <div id="overtaken_song" class="song" onclick="overtakenvalue()">
+                    <img id="overtaken" src="overtakenlogo.jpeg" alt="">
+                    <p id="song1"><span id="songh1">Sounds of One Piece,Overtaken</span> <br>oda <br>1.2M Listen</p>
+                </div>
+                <div class="song"  id="fasla_song" onclick="faslavalue()"><img id="fasla" src="fasla.jpg" alt="">
+                    <p id="song1"><span id="songh1">Faasla</span> <br>Darshan Raval & Shirley Setia<br>3.2M Listen</p>
+                </div>
+                <div class="song"  id="aaj_se_trei_song" onclick="aaj_se_terivalue()"><img id="aaj_se_teri" src="aaj_se_teri.jpg" alt="">
+                    <p id="song1"><span id="songh1">Aaj Se Teri</span> <br>Arijit singh<br>203M Listen</p>
+                </div>
+                <div class="song"  id="feeling_song" onclick="feelingvalue()"><img id="feeling" src="feeling.jpg" alt="">
+                    <p id="song1"><span id="songh1">Feeling</span> <br>Sumit Goswami<br>700M Listen</p>
+                </div>
+            </div>
+        </div>
+        <div class="main_play_music">
+            <nav>
+                <ul>
+                    <li><img class="back" src="arrow_back.png" alt=""></li>
+                    <li class="song_name">Song</li>
+                    <li><img src="favorite_white.png" alt=""></li>
+                </ul>
+            </nav>
+            <div class="img_details"><img class="main_pic" src="overtakenlogo.jpeg" alt="">
+                <p class="allsongname">Overtaken</p>
+                <p style="margin-bottom: 40px;">one piece</p>
+            </div>
+            <div class="songtime">
+                <div class="color">
+                </div>
+                <div. class="runtime">
+                    <span id="timestrat">0:00 </span> <span id="timeend">0:00</span>
+            </div>
+            <div class="function">
+                <img class="functionimg" src="repeat.png" alt="">
+                <img class="functionimg" src="skip_previous.png" alt="">
+                <img id="functionimg1" src="pause.png" alt="">
+                <img id="functionimg2" src="play_arrow.png" alt="">
+                <img class="functionimg" src="skip_next.png" alt="">
+                <img class="functionimg" src="shuffle.png" alt="">
+            </div>
+        </div>
+        <div class="main_play_music_fasla">
+            <nav>
+                <ul>
+                    <li><img class="back" src="arrow_back.png" alt=""></li>
+                    <li class="song_name">Song</li>
+                    <li><img src="favorite_white.png" alt=""></li>
+                </ul>
+            </nav>
+            <div class="img_details"><img class="main_pic" src="fasla.jpg" alt="">
+                <p class="allsongname">Faasla</p>
+                <p style="margin-bottom: 40px;">DARSHAN</p>
+            </div>
+            <div class="songtime">
+                <div class="color">
+                </div>
+                <div. class="runtime">
+                    <span id="timestrat_fasla">0:00 </span> <span id="timeend_fasla">0:00</span> 
+                </div.>
+            </div>
+            <div class="function">
+                <img class="functionimg" src="repeat.png" alt="">
+                <img class="functionimg" src="skip_previous.png" alt="">
+                <img id="functionimg1_fasla" src="pause.png" alt="">
+                <img id="functionimg2_fasla" src="play_arrow.png" alt="">
+                <img class="functionimg" src="skip_next.png" alt="">
+                <img class="functionimg" src="shuffle.png" alt="">
+            </div>
+        </div>
+        <div class="main_play_music_aaj_se_teri">
+            <nav>
+                <ul>
+                    <li><img class="back" src="arrow_back.png" alt=""></li>
+                    <li class="song_name">Song</li>
+                    <li><img src="favorite_white.png" alt=""></li>
+                </ul>
+            </nav>
+            <div class="img_details"><img class="main_pic" src="aaj_se_teri.jpg" alt="">
+                <p class="allsongname">Aaj Se Teri</p>
+                <p style="margin-bottom: 40px;">ARIJIT SINGH</p>
+            </div>
+            <div class="songtime">
+                <div class="color">
+                </div>
+                <div. class="runtime">
+                    <span id="timestrat_aaj_se_teri">0:00 </span> <span id="timeend_aaj_se_teri">0:00</span>
+            </div>
+            <div class="function">
+                <img class="functionimg" src="repeat.png" alt="">
+                <img class="functionimg" src="skip_previous.png" alt="">
+                <img id="functionimg1_aaj_se_teri" src="pause.png" alt="">
+                <img id="functionimg2_aaj_se_teri" src="play_arrow.png" alt="">
+                <img class="functionimg" src="skip_next.png" alt="">
+                <img class="functionimg" src="shuffle.png" alt="">
+            </div>
+    
+        </div>
+        <div class="main_play_music_Feeling">
+            <nav>
+                <ul>
+                    <li><img class="back" src="arrow_back.png" alt=""></li>
+                    <li class="song_name">Song</li>
+                    <li><img src="favorite_white.png" alt=""></li>
+                </ul>
+            </nav>
+            <div class="img_details"><img class="main_pic" src="feeling.jpg" alt="">
+                <p class="allsongname">Feeling</p>
+                <p style="margin-bottom: 40px;">SUMIT GOSWAMI</p>
+            </div>
+            <div class="songtime">
+                <div class="color">
+                </div>
+                <div. class="runtime">
+                    <span id="timestrat_Feeling">0:00 </span> <span id="timeend_Feeling">0:00</span>
+            </div>
+            <div class="function">
+                <img class="functionimg" src="repeat.png" alt="">
+                <img class="functionimg" src="skip_previous.png" alt="">
+                <img id="functionimg1_Feeling" src="pause.png" alt="">
+                <img id="functionimg2_Feeling" src="play_arrow.png" alt="">
+                <img class="functionimg" src="skip_next.png" alt="">
+                <img class="functionimg" src="shuffle.png" alt="">
+            </div>
+    
+        </div>
+
+        <!-- <footer> -->
+            <div class="box">
+                <img id="img_blue" src="home.png" alt="">
+                <img id="img_white" src="home1.png" alt="">
+                <img id="music_inactive" src="music.png" alt="">
+                <img id="music_active" src="music_white.png" alt="">
+                <img id="favorite_inactive" src="favorite.png" alt="">
+                <img id="favorite_active" src="favorite_white.png" alt="">
+                <img id="download_inactive" src="download.png" alt="">
+                <img id="download_active" src="download_white.png" alt="">
+            </div>
+        <!-- </footer> -->
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

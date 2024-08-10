@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.laptop{
+    display: flex;
+    display:none;
+   color: aliceblue;
+}
+body{
+    background-color: #0a071e;
+    
+}
+
+.main{
+    display: block;
+}
+.main_play_music{
+    display: none;
+}
+.main_play_music_fasla{
+    display: block;
+}
+
+@media (min-width: 780px) {
+    .hidden{
+        display: none;
+    }
+   .laptop{
+    display: block;
+   }
+  }
+nav{
+    margin: 10px 10px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 49px;
+}
+ul{
+    list-style: none;
+}
+#noti{
+    height: 30px;
+    width: 30px;
+    border-radius: 49px;
+    margin-top: 10px;
+}
+#noti:active{
+    background-color:#110371; ;
+}
+#p1{
+    color: #52d2a5;
+    font-family: "Work Sans", sans-serif;
+    font-size: 25px;
+}
+#p2{
+    color: white;
+    font-family: "Exo 2";
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+   
+}
+input{
+   
+    height: 35px;
+    width: 128px;
+    border-radius: 40px;
+    margin-top: 18px;
+    margin-left:40px ;
+    background-color: black;
+    outline: none;
+    border: 0.5px solid rgb(84, 82, 82);
+    padding-left: 24px;
+    color: white;
+}
+#search{
+    height: 16px;
+    position:relative;
+    left: 64px;
+    bottom: -28px;
+}
+.cantainar{
+    height: 73vh;
+    width: 100vw;
+    overflow: scroll;
+ 
+    
+    /* border: 1px solid wheat; */
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding-top: 15px;
+    height: 76px;
+    width: 95vw;
+    position: fixed;
+    bottom: 2px;
+    margin-left: 11px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 1px -2px 13px 0px #6156e2;
+    z-index: 1;
+
+   
+}
+img{
+    
+    height: 35px;
+}
+#img_blue{
+    margin-left: 10px;
+    display: none;
+}
+#img_white{
+    margin-left: 10px;
+    display: block;
+}
+.song{
+    color: white;
+    height: 150px;
+    width: 97vw;
+    /* border: 1px solid white; */
+    margin-top: 17px;
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+
+
+}
+.song:active{
+    background-color: #a49cf7;
+}
+#overtaken{
+
+    height: 146px;
+    border-radius: 20px;
+}
+#song1{
+    margin-left: 15px;
+    font-size: 20px;
+     font-family: "Montserrat", sans-serif;;
+}
+#songh1{
+    font-size: 25px;
+}
+#fasla{
+    
+    height: 140px;
+    border-radius: 17px;
+}
+.song_name{
+    color: white;
+    font-size: 28px;
+    font-family:"Quicksand" ;
+}
+.main_pic{
+    height: 330px;
+    border-radius: 40px;
+}
+.img_details{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family:"Quicksand" ;
+    
+}
+.allsongname{
+    margin:17px 0px;
+    color: white;
+    font-size: 28px;
+    font-family:"Quicksand" ;
+}
+.songtime{
+height: 7px;
+width: 380px;
+background-color: white;
+margin: auto;
+border-radius: 5px;
+}
+.color{
+
+    height: 7px;
+    width: 0px;
+    background-color: #6156e2;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.function{
+   margin-top: 66px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.functionimg{
+    height: 43px;
+}
+#functionimg1{
+    display: block;
+    height: 60px;
+    background-color: #6156e2;
+    border-radius: 50px;
+    box-shadow: 0px -2px 17px 2px #6156e2;
+}
+#functionimg2{
+    height: 60px;
+    background-color: #6156e2;
+    border-radius: 50px;
+    box-shadow: 0px -2px 17px 2px #6156e2;
+    display: none;
+}
+#functionimg1_fasla{
+    display: block;
+    height: 60px;
+    background-color: #6156e2;
+    border-radius: 50px;
+    box-shadow: 0px -2px 17px 2px #6156e2;
+}
+#functionimg2_fasla{
+    height: 60px;
+    background-color: #6156e2;
+    border-radius: 50px;
+    box-shadow: 0px -2px 17px 2px #6156e2;
+    display: none;
+}
+.runtime{
+    display: flex;
+    justify-content: space-between;
+}
+
+#timestrat_fasla{
+    color: white;
+}
+#timeend_fasla{
+    color: white;
+}
+#music_inactive{
+    display:block ;
+}
+#music_active{
+    display:none ;
+}
+#favorite_inactive{
+    display:block ;
+}
+#favorite_active{
+    display:none ;
+}
+#download_inactive{
+    margin-right: 10px;
+    display:block ;
+}
+#download_active{
+    margin-right: 10px;
+    display:none ;
+}
